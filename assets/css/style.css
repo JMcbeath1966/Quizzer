@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;700&family=Orbitron:wght@400;500;800&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;  
+  }
 
 :root {
     --hue-neutral: 200;
@@ -31,3 +34,36 @@ body.correct {
     --hue: var(--hue-wrong);
 }
 
+btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px; /* to produce dark blur around container */
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    gap: 10px;
+    margin: 20px;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}

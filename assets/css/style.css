@@ -34,10 +34,6 @@ body.correct {
     --hue: var(--hue-wrong);
 }
 
-btn.wrong {
-    --hue: var(--hue-wrong);
-}
-
 .container {
     width: 800px;
     max-width: 80%;
